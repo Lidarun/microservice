@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/micro.iml" filepath="$PROJECT_DIR$/micro.iml" />
-      <module fileurl="file://$PROJECT_DIR$/telegram-bot/telegram-bot.iml" filepath="$PROJECT_DIR$/telegram-bot/telegram-bot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../microservice/web/web.iml" filepath="$PROJECT_DIR$/../microservice/web/web.iml" />
     </modules>
   </component>
 </project>

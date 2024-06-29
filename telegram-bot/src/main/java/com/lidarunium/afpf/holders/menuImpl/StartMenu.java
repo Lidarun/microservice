@@ -1,4 +1,4 @@
-package com.lidarunium.afpf.holders.menu;
+package com.lidarunium.afpf.holders.menuImpl;
 
 import com.lidarunium.afpf.enums.Command;
 import com.lidarunium.afpf.holders.KeyboardHolder;

@@ -1,4 +1,4 @@
-package com.lidarunium.afpf.holders.messages;
+package com.lidarunium.afpf.holders.messagesImpl;
 
 import com.lidarunium.afpf.enums.ButtonType;
 import com.lidarunium.afpf.enums.Command;
@@ -19,7 +19,6 @@ import java.util.Collections;
 public class Finance implements MessageHolder {
     private final MessageGenerator messageGenerator;
     private final MarkupService markupService;
-
 
     @Override
     public Command getCommand() {

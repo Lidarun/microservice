@@ -1,10 +1,10 @@
 package com.lidarunium.afpf.enums;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 @Getter
-@AllArgsConstructor
+@RequiredArgsConstructor
 public enum ButtonType {
     BACK("Back"),
     SAVE("Save"),

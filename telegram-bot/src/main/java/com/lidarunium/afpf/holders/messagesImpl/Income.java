@@ -1,4 +1,4 @@
-package com.lidarunium.afpf.holders.messages;
+package com.lidarunium.afpf.holders.messagesImpl;
 
 import com.lidarunium.afpf.cache.BotStateCache;
 import com.lidarunium.afpf.enums.Command;

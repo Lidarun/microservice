@@ -27,7 +27,7 @@ public class CallbackQueryHandler {
                 case "Expense" -> Command.EXPENSE;
                 case "Cancel" -> Command.CANCEL;
                 case "Salary", "Edit" -> Command.SALARY;
-                case "Save" -> Command.SAVE_SALARY;
+                case "Save" -> Command.SALARY_SAVE;
 
                 default -> null;
             };

@@ -2,13 +2,14 @@ package com.lidarunium.afpf.enums;
 
 public enum Command {
     START,
-    UNKNOWN_COMMAND,
+    BACK,
+    CANCEL,
     INCOME,
     SALARY,
+    SALARY_SIZE,
+    SALARY_SAVE,
     FINANCE,
     EXPENSE,
-    SALARY_SIZE,
-    CANCEL,
-    BACK,
-    DELETE_PREVIOUS_MESSAGE, SAVE_SALARY;
+    UNKNOWN_COMMAND,
+    DELETE_PREVIOUS_MESSAGE;
 }

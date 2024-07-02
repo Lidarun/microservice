@@ -1,5 +1,6 @@
-package com.lidarunium.afpf.holders.messages;
+package com.lidarunium.afpf.holders.messagesImpl;
 
+import com.lidarunium.afpf.cache.BotStateCache;
 import com.lidarunium.afpf.enums.Command;
 import com.lidarunium.afpf.holders.MessageHolder;
 import com.lidarunium.afpf.service.MessageGenerator;
@@ -10,12 +11,13 @@ import org.telegram.telegrambots.meta.api.objects.Message;
 
 @Component
 @RequiredArgsConstructor
-public class SalarySaver implements MessageHolder {
+public class Expense implements MessageHolder {
     private final MessageGenerator messageGenerator;
+    private final BotStateCache botStateCache;
 
     @Override
     public Command getCommand() {
-        return Command.SAVE_SALARY;
+        return Command.EXPENSE;
     }
 
     @Override
@@ -25,10 +27,8 @@ public class SalarySaver implements MessageHolder {
 
     private SendMessage generateMessage(Message message) {
         long chatID = message.getChatId();
-        String userMsg = message.getText();
+        botStateCache.setBotState(chatID, Command.DELETE_PREVIOUS_MESSAGE);
 
-        String msg = String.format("Your salary with size %s was saved", userMsg);
-
-        return messageGenerator.generateMessage(chatID, msg);
+        return messageGenerator.generateMessage(chatID, "Success!");
     }
 }

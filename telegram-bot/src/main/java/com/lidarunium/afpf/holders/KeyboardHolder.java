@@ -7,8 +7,6 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.Keyboard
 import java.util.List;
 
 public interface KeyboardHolder {
-    Command getCommandHandler();
-
     default ReplyKeyboardMarkup getMenuKeyboard() {
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         replyKeyboardMarkup.setIsPersistent(false);
@@ -22,5 +20,6 @@ public interface KeyboardHolder {
         return replyKeyboardMarkup;
     }
 
+    Command getCommandHandler();
     List<KeyboardRow> getKeyboardRows();
 }

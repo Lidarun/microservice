@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 public enum ButtonType {
     BACK("Back"),
     SAVE("Save"),
+    SALARY("Salary"),
     EDIT("Edit"),
     CANCEL("Cancel"),
     INCOME("Income"),

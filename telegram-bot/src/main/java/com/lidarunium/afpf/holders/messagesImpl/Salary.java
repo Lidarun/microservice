@@ -40,8 +40,8 @@ public class Salary implements MessageHolder {
         long chatID = message.getChatId();
         Command command = botStateCache.getBotState(chatID);
         String userMsg = message.getText();
-        SendMessage sendMessage = null;
-        String msg = null;
+        SendMessage sendMessage;
+        String msg;
 
         if (Objects.isNull(command)) {
             msg = "How much?";

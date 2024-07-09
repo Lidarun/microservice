@@ -73,7 +73,7 @@ public class PersonalFinanceBot extends SpringWebhookBot {
         Command command = botStateCache.getPreviousBotState(Long.parseLong(sendMessage.getChatId()));
         if (Objects.equals(command, Command.DELETE_PREVIOUS_MESSAGE) ||
                 Objects.equals(command, Command.SALARY) ||
-                Objects.equals(command, Command.SALARY_SAVE)) {
+                Objects.equals(command, Command.INCOME_SAVER)) {
             deleteMessage(deleteMessageCache.getDeleteMessage(Long.parseLong(sendMessage.getChatId())));
 
             if (Objects.equals(command, Command.DELETE_PREVIOUS_MESSAGE))
